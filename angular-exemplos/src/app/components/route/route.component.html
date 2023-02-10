@@ -1,0 +1,17 @@
+<p>route works!</p>
+
+<div class="content" role="main">
+  <span><h2>{{ title }} app is running!</h2></span>
+  <table style="width:40%;">
+    <tr class="table-bordered">
+        <td><a [routerLink]="['/home']" class="btn-block" routerLinkActive="['active']">Home</a></td>
+        <td><a [routerLink]="['/mobile']">Mobile</a></td>
+        <td><a routerLink="/tv">TV</a></td>
+        <td><a routerLink="/computer">Computers</a></td>
+    </tr>
+  </table>
+  <br/>
+  <div class="spacer">
+    <router-outlet></router-outlet>
+  </div>
+</div>

@@ -1,0 +1,25 @@
+<p>reactive-forms-escola-front-end works!</p>
+
+<form [formGroup]="perfil">
+  <label>Nome</label>
+  <br/>
+  <input type="text" formControlName="nome" />
+  <br/>
+  <label>Sobrenome</label>
+  <br/>
+  <input type="text" formControlName="sobrenome" />
+  <br/>
+  <label>Data de nascimento</label>
+  <br/>
+  <input type="text" formControlName="dataNascimento" />
+  <br/>
+  <label>Nome da mãe</label>
+  <br/>
+  <input type="text" formControlName="nomeMae" />
+  <br/>
+</form>
+<br>
+<button (click)="obter()">Obter dados!</button>
+<pre>
+  {{ data | json }}
+</pre>

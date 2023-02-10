@@ -1,0 +1,14 @@
+<p>ng-if works!</p>
+
+<div>
+  <input type="button" value="{{caption}}" (click)="changeData()"/>
+  <br />
+  <h2 *ngIf="showInfo"><span>Demonstrate of Structural Directives - *ngIf</span></h2>
+</div>
+
+<ng-container *ngIf="mostraTitulo; then thenBlock; else elseBlock;"></ng-container>
+
+<ng-template #thenBlock>Exibindo thenBlock</ng-template>
+<ng-template #elseBlock>Exibindo elseBlock</ng-template>
+
+

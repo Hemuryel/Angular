@@ -1,0 +1,15 @@
+<p>view-child works!</p>
+
+<div>
+  <app-child-view-child
+    (addNumber)="add($event)"
+    (subtractNumber)="subtract($event)"
+    (multiplyNumber)="multiply($event)"
+    (divideNumber)="divide($event)"
+    #calculator></app-child-view-child>
+</div>
+<h3>Result</h3>
+<span>{{result}}</span>
+<br />
+<br />
+<input type="button" value="Reset" (click)="reset()" />

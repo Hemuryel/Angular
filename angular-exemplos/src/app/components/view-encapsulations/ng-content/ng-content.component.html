@@ -1,0 +1,22 @@
+<p>ng-content works!</p>
+
+<!-- Bootstrap CSS -->
+<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+
+<div>
+  <h2>Demonstrate Modal Window using ngContent</h2>
+  <input type="button" value="Show Modal" class="btn-group" (click)="fnOpenModal()" />
+  <br />
+  <modal-window [header-caption]="caption" #modal>
+      <content-body>
+          conteúdo pai
+          <h1>Modal Contain Defined at Parent Component</h1>
+          <p>
+              Lorem ipsum dolor, sit amet consectetur adipisicing elit. Atque natus minima suscipit magnam, quas provident aperiam? Quam maiores saepe placeat soluta, vel qui dolorem dolorum dignissimos veniam iusto facilis totam?
+          </p>
+      </content-body>
+      <content-footer>
+          <input type="button" class="btn-default active" class="btn btn-primary" value="Modal Close" (click)="fnHideModal();" />
+      </content-footer>
+  </modal-window>
+</div>

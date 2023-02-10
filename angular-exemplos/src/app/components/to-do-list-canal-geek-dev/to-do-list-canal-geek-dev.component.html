@@ -1,0 +1,11 @@
+<p>to-do-list-canal-geek-dev works!</p>
+<h2>TO-DO list</h2>
+
+<ul>
+  <li *ngFor="let item of items">
+    {{item}} <button (click)="removeTarefa(item)">Remover</button>
+  </li>
+</ul>
+
+<input type="text" [(ngModel)]="tarefa">
+<button (click)="addTarefa()">Adicionar</button>

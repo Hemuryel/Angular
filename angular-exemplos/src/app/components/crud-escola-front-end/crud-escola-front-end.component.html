@@ -1,0 +1,10 @@
+<p>
+  crud-escola-front-end works!
+</p>
+
+<ul>
+  <li *ngFor="let i of images">
+    {{ i.title }}<br>
+    <img [attr.src] = "i.url" />
+  </li>
+</ul>

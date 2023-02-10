@@ -1,0 +1,13 @@
+<mat-toolbar class="footer">
+    <span>
+        Desenvolvido por
+        <i class="material-icons v-middle" appRed>
+            favorite
+        </i>
+        por <b>Cod<span class="red">3</span>r</b>
+    </span>
+    <ul>
+        <li *myFor="let n em [1,2,3] usando 'texto'">{{ n }}</li>
+        <!--"em" poderia ser qualquer coisa-->
+    </ul>
+</mat-toolbar>

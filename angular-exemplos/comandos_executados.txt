@@ -1,0 +1,29 @@
+# Comando npm - configurar servidor JSON
+
+// criar estrutura package.json 
+//-y yes pra todas perguntas de instalação)
+npm init -y 
+
+// instalar servidor json
+npm i json-server 
+
+//alterar dentro de package.json para iniciar API ao iniciar npm
+// alterar "test" para "start"
+"start": "json-server --watch api.json --port 3001"
+
+// iniciar servidor json-server e rodar API
+npm start
+
+// instalar angular cli
+npm i -g @angular/cli
+
+# Comandos Angular 
+
+// criar aplicação Angular
+ng new angular-exemplos
+
+// adicionar pacote Angular Material
+ng add @angular/material
+
+// iniciar aplicação 
+ng serve
